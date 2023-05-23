@@ -1,0 +1,40 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+#username, #password, #email {
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0px 0px 13px -4px rgba(61,54,61,0.75);
+    -moz-box-shadow: inset 0px 0px 13px -4px rgba(61,54,61,0.75);
+    box-shadow: inset 0px 0px 13px -4px rgba(61,54,61,0.75);
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#submit {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    padding: 4px 30px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#submit:hover {
+    color: white;
+    background-color: black;
+    transition: 0.1s;
+    cursor: pointer;
+}

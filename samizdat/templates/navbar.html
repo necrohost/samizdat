@@ -1,0 +1,20 @@
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/navbar.css') }}"
+/>
+{% block navbar %}
+<div class="navbar">
+  <div class="logo">LOGO</div>
+  <div class="links">
+    <ul>
+      <li><a href="feed">Лента</a></li>
+    </ul>
+    <ul>
+      <li>
+        <span>Поиск</span> <input type="text" />
+        <input type="submit" value="go" />
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

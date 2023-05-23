@@ -1,0 +1,51 @@
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/cats.css') }}"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+{% block categories %}
+<div class="cat-block">
+  <form>
+    {% for category in categories %}
+    <div class="tag">
+      <input
+        hidden
+        type="checkbox"
+        name="category"
+        value="{{ category.id }}"
+        id="category-{{ category.id }}"
+      />
+      <label for="category-{{ category.id }}">{{ category.name }}</label>
+    </div>
+    {% endfor %}
+  </form>
+</div>
+<script>
+$("input:checkbox").on('click', function() {
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('input[type="checkbox"][name="category"]').change(function() {
+    var tag_id = $('input[type="checkbox"][name="category"]:checked').map(function() {
+      return $(this).val();
+    }).get().join(',');
+    $.ajax({
+      url: '/posts-by-tag/' + tag_id,
+      type: 'GET',
+      success: function(data) {
+        $('.container').html(data);
+      }
+    });
+  });
+});
+</script>
+{% endblock %}

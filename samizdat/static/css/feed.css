@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani0&family=Montserrat&display=swap");
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+}
+.container {
+  max-width: 100vh;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* padding: 50px; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  border: 1px solid #ededf0;
+  border-radius: 0.5em;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: white;
+}
+
+.card .card-title {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  height: 200px;
+  overflow: hidden;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #000, #000, rgba(0, 0, 0, 0));
+}
+
+.card span {
+  color: black;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card a:hover {
+  text-decoration:dashed;
+  color: hotpink;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani0&family=Montserrat&display=swap');
+body { background-color: #f7f7f7; }
+
+.container {
+    width: 66vh;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    border: 1px solid #ededf0;
+    border-radius: 0.5em;
+    background-color: white;
+    padding: 30px;
+}
+
+.card-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+}

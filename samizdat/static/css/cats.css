@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani0&family=Montserrat&display=swap');
+.cat-block {
+    /* border: 1px solid black; */
+    max-width: 100vh;
+    margin: 0 auto;
+    border-bottom: 1px solid #B0BEC5;
+}
+
+.cat-block .tag {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.cat-block label {
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: 1px solid #B0BEC5;
+    color: #546E7A;
+    padding: 5px 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cat-block label:hover {
+    color: #00ACC1;
+    border: 1px solid #00ACC1;
+}
+
+input:checked + label {
+    color: white;
+    border: 1px solid #00ACC1;
+    background-color: #00ACC1;
+}
+
+input:checked + label:hover {
+    color: white;
+}

@@ -1,0 +1,14 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: white;
+}
+.links {
+    float: right;
+}
+ul {
+    display: inline-block;
+}
